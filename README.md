@@ -43,8 +43,9 @@ example to run all model:
     slim -d numQTLs=500 01-SCRIPTS/02.scenario2_1migration_bottleneckNorth_warming.sh >02-RESULTS/scenario2.500QTLs.txt  
     slim -d numQTLs=500 01-SCRIPTS/03.scenario3_2migration_bottleneckNorth_warming.sh >02-RESULTS/scenario3.500QTLs.txt  
 
- * **_2 perform a graph of the results with 01-SCRIPTS/04.Figure2_code.R** 
-    simply follow the code in the Rscript  
+ * **_2 perform a graph of the results with 01-SCRIPTS/04.Figure2_code.R**   
+   
+  simply follow the code in the Rscript  
 
 
 # Detailed Usage:
