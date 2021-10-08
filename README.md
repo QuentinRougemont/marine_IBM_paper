@@ -6,6 +6,7 @@ based on previous work by Matz et al. 2020 in Global Change Biology
 
 **the purpose of these scripts is to guide new users through non-WF models in slim.**  
 
+There are fundamental difference between **Wright-Fisher (WF)** and **non-WF** models  
 For instance in a classical **Wright-Fisher** model generations are **discrete**, **non-overlapping**, individuals reproduced once and died. There is **no age structure**. All these assumptions can be relaxed in a nonWF model, allowing to simulate more realistic age structure with overlapping generations.  
 In a non-WF, **migration** is a property of the individuals, as opposed to a propery of the population(s) in a classic WF model.  
 In a **WF** model all individuals survive to maturity and **fitness** is a probability that a sexually mature individuals will contribute to the next generation; fitness is **_relative_** as the population size will be maintained. In **nonWF** fitness influence directly the probability of survival and is a probability that a given individual survive to maturity.  
@@ -39,9 +40,11 @@ Running a model:
  * **_1 choose one of the model in 01-SCRIPTS/xx_scenario_xx.sh_**
 
 example to run all model:  
+    ```
     slim -d numQTLs=500 ./01-SCRIPTS/01.scenario1_1migration_warming.sh > 02-RESULTS/scenario1.500QTLs.txt  
     slim -d numQTLs=500 01-SCRIPTS/02.scenario2_1migration_bottleneckNorth_warming.sh >02-RESULTS/scenario2.500QTLs.txt  
     slim -d numQTLs=500 01-SCRIPTS/03.scenario3_2migration_bottleneckNorth_warming.sh >02-RESULTS/scenario3.500QTLs.txt  
+    ```
 
  * **_2 perform a graph of the results with 01-SCRIPTS/04.Figure2_code.R**   
    
@@ -50,7 +53,7 @@ example to run all model:
 
 # Detailed Usage:
   To fill
-   * **1. extract climate data from CPIM5 or from biooracle**    
+   * **1. extract climate data from CPIM5 or from bio-oracle**    
    (To fill)
    
    * **2. Customize and run slim models** 
