@@ -19,6 +19,8 @@ There is many more differences that are detailed in slim manual.
 
 **R** software.
 
+## Tested on linux but should work on mac as well. 
+
 ## software installation for LINUX USERS:
 
 ```bash
@@ -46,22 +48,55 @@ example to run all model:
     slim -d numQTLs=500 01-SCRIPTS/03.scenario3_2migration_bottleneckNorth_warming.sh >02-RESULTS/scenario3.500QTLs.txt  
     ```
 
- * **_2 perform a graph of the results with 01-SCRIPTS/04.Figure2_code.R**   
+ * **_2 perform a graph of the results with 01-SCRIPTS/04.Figure2_code.R_**   
    
   simply follow the code in the Rscript  
 
 
 # Detailed Usage:
-  To fill
+ 
    * **1. extract climate data from CPIM5 or from bio-oracle**    
-   (To fill)
+   Before running slim simulations we need to extract some data. 
+   Here, I simply and arbitrally extracted a set of 54 (randomly chosen) locations but these correspond broadly to the American lobster and I modified the model with this in mind.
+   There's 2 approaches to extract climate data.
+   * From CMIP5/CMIP6 models:  
+        use `01-SCRIPTS/00.extract_cmip5_data.R`  
+   * From Bio-oracle:  
+        use `01-SCRIPTS/00.extract_temperature_data.R`  
+       
+   * Hereafter I used the data from **Bio-oracle** and modelled changed in temperature each generation based on Matz et al. 
+        Yet using the **CPIM5** data temperature for each generation from 1861 to 2100 combined with the approach of Matz et al. to extrapolate in the past may be a better approach. 
+   
    
    * **2. Customize and run slim models** 
-    (To fill)
+
+we provide simple model for exploration.
+    First test model with **only global warming** 
+      ```
+    slim -d numQTLs=500 ./01-SCRIPTS/01.scenario1_1migration_warming.sh > 02-RESULTS/scenario1.500QTLs.txt
+    ```
+    
+Second test model with **global warming + bottleneck**  The goal of the bottleneck is to mimic expected crash in population size due to other environmental factor for which the fitness effect are complicate to model. e.g. acidification.       
+    ```
+    slim -d numQTLs=500 01-SCRIPTS/02.scenario2_1migration_bottleneckNorth_warming.sh >02-RESULTS/scenario2.500QTLs.txt  
+    ```
+
+This test model with **global warming + bottleneck + change in connectivity**. Again, with global change, one may expect change in connectivity among populations.
+    ```
+    slim -d numQTLs=500 01-SCRIPTS/03.scenario3_2migration_bottleneckNorth_warming.sh >02-RESULTS/scenario3.500QTLs.txt  
+    ```
+    
+    To add: model with environment having several effect on fitness (e.g. warming + acidification )
+    
+
    * **3. Create PNG**   
+``` 
   (To fill)
+```
    * **4. create vidéo**  
+```
      (To fill)
+ ```
      
 ## References:
 
