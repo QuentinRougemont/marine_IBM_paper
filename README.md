@@ -90,10 +90,10 @@ This test model with **global warming + bottleneck + change in connectivity**. A
     
 
    * **3. Create PNG**   
-``` 
-  Simply run the Rscript to do so. This will produce the kind of images below ![example_graph] (https://github.com/QuentinRougemont/marine_IBM_paper/blob/main/pictures/example.png)
+
+  Simply run the Rscript ``01-SCRIPTS/04.Figure2_code.R``` to do so. 
+  This will produce the kind of images below ![example_graph] (https://github.com/QuentinRougemont/marine_IBM_paper/blob/main/pictures/example.png)
   
-```
    * **4. create vidéo**  
 ```
      (To fill)
