@@ -116,10 +116,12 @@ This test model with **global warming + bottleneck + change in connectivity**. A
 	grep -v "#\|empty\|no" $i > ${i%.txt}.reshaped.txt ; 
     done
     ```
+    
+    
     then I remove the first few lines of slim output in vim
     
     Then use the Rscripts for different models:  
-    `01-SCRIPTS/video_bottleneck.north.R  `
+    `01-SCRIPTS/video_bottleneck.north.R`  
     
 
 
