@@ -91,9 +91,9 @@ This test model with **global warming + bottleneck + change in connectivity**. A
 
    * **3. Create PNG**   
 
-  Simply run the Rscript ``01-SCRIPTS/04.Figure2_code.R```  to do so.   
+  Simply run the Rscript ```01-SCRIPTS/04.Figure2_code.R```  to do so.   
   
-  This will produce the kind of images below. 
+  This will produce the kind of images below.   
   
   ![example_graph] (https://github.com/QuentinRougemont/marine_IBM_paper/blob/main/pictures/example.png)   
   
@@ -102,9 +102,26 @@ This test model with **global warming + bottleneck + change in connectivity**. A
   
   
    * **4. create vidéo**  
-```
-     (To fill)
- ```
+
+    * you need ffmpeg to create the video:  
+    	sudo apt update
+	sudo apt install ffmpeg
+
+    * reshape the results:
+    ```
+    cd 02-RESULTS  
+    for i in *txt ; 
+    do 
+	grep -v "#\|empty\|no" $i > ${i%.txt}.reshaped.txt ; 
+    done
+    ```
+    then I remove the first few lines of slim output in vim
+    
+    Then use the Rscripts for different models:  
+    `01-SCRIPTS/video_bottleneck.north.R  `
+    
+
+
      
 ## References:
 
@@ -116,3 +133,5 @@ Haller BC, Messer PW. SLiM 3: Forward Genetic Simulations Beyond the Wright-Fish
 Matz MV, Treml EA, Aglyamova GV, van Oppen MJH, Bay LK. Potential for rapid genetic adaptation to warming in a Great Barrier Reef coral. PLoS Genet. 2018;14(4):e1007220.  
 
 Matz MV, Treml EA, Haller BC. Estimating the potential for coral adaptation to global warming across the Indo-West Pacific. Glob Chang Biol. 2020;26(6):3473–81.  
+
+Original repo: https://github.com/z0on/CoralTriangle_SLiM_model
