@@ -102,13 +102,14 @@ This test model with **global warming + bottleneck + change in connectivity**. A
   
   
    * **4. create vidéo**  
-
-    * you need ffmpeg to create the video:  
+   
+   * * you need ffmpeg to create the video:  
     	sudo apt update
 	sudo apt install ffmpeg
 
-    * reshape the results:
-    ```
+   * reshape the results:  
+    
+    ```bash
     cd 02-RESULTS  
     for i in *txt ; 
     do 
