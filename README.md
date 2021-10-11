@@ -96,35 +96,43 @@ This test model with **global warming + bottleneck + change in connectivity**. A
   This will produce the kind of images below.   
   
   ![example_graph](https://github.com/QuentinRougemont/marine_IBM_paper/blob/main/pictures/example.png) 
+
   
-  
+	we see that after these 5000 generations populations have reached a high fitness in their local environment 
+
+
+   	after a few generations of warming southern populations quickly undergo a drop in fitness, while migration may help maintain northermost populations a few generation, despite the bottleneck  
+
+   ![example_graph](https://github.com/QuentinRougemont/marine_IBM_paper/blob/main/pictures/example2.png)
   
   
   
    * **4. create vidéo**  
    
-   * * you need ffmpeg to create the video:  
-    	sudo apt update
-	sudo apt install ffmpeg
+    * you need ffmpeg to create the video:  
+    	sudo apt update  
+	sudo apt install ffmpeg 
 
-   * reshape the results:  
+    * reshape the results:  
     
     ```bash
     
-    cd 02-RESULTS  
-    for i in *txt ; 
-    do 
-	grep -v "#\|empty\|no" $i > ${i%.txt}.reshaped.txt ; 
+    cd 02-RESULTS
+    for i in *txt ;
+    do
+    grep -v "#\|empty\|no" $i > ${i%.txt}.reshaped.txt ;
     done
     ```
     
     
     then I remove the first few lines of slim output in vim
     
-    Then use the Rscripts for different models:  
+    * Then use the Rscripts for different models:  
+    For instance this scripts:
     `01-SCRIPTS/video_bottleneck.north.R`  
     
-
+    will create the video for a model with warming and a bottleneck in the northern populations 
+    External commands are used from R and works well in linux. This may need some editing for windows 
 
      
 ## References:
