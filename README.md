@@ -129,10 +129,11 @@ done
     
     * Then use the Rscripts for different models:  
     For instance this scripts:
-    `01-SCRIPTS/05.create_video_bottleneck_north.R`
+    `01-SCRIPTS/06.create_video_bottleneck_north.R`
     
     will create the video for a model with warming and a bottleneck in the northern populations 
-    External commands are used from R and works well in linux. This may need some editing for windows 
+    External commands are used from R and works well in linux. This may need some editing for windows
+    The other Rscript will create videos for other scenarios   
 
      
 ## References:
