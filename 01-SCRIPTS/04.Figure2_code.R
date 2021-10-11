@@ -17,6 +17,8 @@ if("raster" %in% rownames(installed.packages()) == FALSE)
     {install.packages("rater", repos="https://cloud.r-project.org") }
 if("viridis" %in% rownames(installed.packages()) == FALSE)
     {install.packages("viridis", repos="https://cloud.r-project.org") }
+if("RColorBrewer" %in% rownames(installed.packages()) == FALSE)
+    {install.packages("RColorBrewer", repos="https://cloud.r-project.org") }
 
 ## load libs
 library(magrittr)
@@ -25,6 +27,7 @@ library(dplyr)
 library(cowplot)
 library(raster)
 library(viridis)
+library(RColorBrewer)
 
 #Fig1A - Scenario 1
 slim1 <- read.table("02-RESULTS/scenario1_1migration_warming.txt") %>%

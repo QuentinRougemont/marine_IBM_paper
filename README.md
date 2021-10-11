@@ -115,21 +115,21 @@ This test model with **global warming + bottleneck + change in connectivity**. A
 
     * reshape the results:  
     
-    ```bash
+```bash
     
-    cd 02-RESULTS
-    for i in *txt ;
-    do
-    grep -v "#\|empty\|no" $i > ${i%.txt}.reshaped.txt ;
-    done
-    ```
+cd 02-RESULTS
+for i in *txt ;
+do
+grep -v "#\|empty\|no" $i > ${i%.txt}.reshaped.txt ;
+done
+```
     
     
     then I remove the first few lines of slim output in vim
     
     * Then use the Rscripts for different models:  
     For instance this scripts:
-    `01-SCRIPTS/video_bottleneck.north.R`  
+    `01-SCRIPTS/05.create_video_bottleneck_north.R`
     
     will create the video for a model with warming and a bottleneck in the northern populations 
     External commands are used from R and works well in linux. This may need some editing for windows 
