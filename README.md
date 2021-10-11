@@ -95,7 +95,7 @@ This test model with **global warming + bottleneck + change in connectivity**. A
   
   This will produce the kind of images below.   
   
-  ![example_graph] (https://github.com/QuentinRougemont/marine_IBM_paper/blob/main/pictures/example.png)   
+  ![example_graph](https://github.com/QuentinRougemont/marine_IBM_paper/blob/main/pictures/example.png) 
   
   
   
@@ -110,6 +110,7 @@ This test model with **global warming + bottleneck + change in connectivity**. A
    * reshape the results:  
     
     ```bash
+    
     cd 02-RESULTS  
     for i in *txt ; 
     do 
