@@ -12,7 +12,7 @@ library(cowplot)
 library(raster)
 library(viridis)
 
-slim <- read.table("02.results/06.matz_2_mig_crash_north_g4800.reshaped.txt") %>%
+slim <- read.table("02.results/06.run_2_mig_crash_north_g4800.reshaped.txt") %>%
 	set_colnames(.,c("generation","pop","Fitness","phenotypes","env","nmuts","sdm2","meanAge","sizeAdults","adultCountMinusSize_over_adultsCount"))
 
 #create vector of coordinates    
