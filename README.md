@@ -1,16 +1,24 @@
-# scripts derived from Matz et al. used in our IBM review paper.
-# purpose:
+# Scripts to perform SLiM simulations in Xuereb, Rougemont, Tiffin, Xue, & Phifer-Rixey (2021) (Accepted in Proceedings B as part of the Evolution in Changing Seas Special Feature)
 
-script to perform evolutionary simulations of population fitness 
+# Purpose:
+
+Scripts to perform evolutionary simulations of population fitness 
 based on previous work by Matz et al. 2020 in Global Change Biology
 
-**the purpose of these scripts is to guide new users through non-WF models in slim.**  
+**the purpose of these scripts is to illustrate the simulation appraoch in our IBM review paper and guide new users through non-WF models in slim.**  
 
-There are fundamental difference between **Wright-Fisher (WF)** and **non-WF** models  
-For instance in a classical **Wright-Fisher** model generations are **discrete**, **non-overlapping**, individuals reproduced once and died. There is **no age structure**. All these assumptions can be relaxed in a nonWF model, allowing to simulate more realistic age structure with overlapping generations.  
-In a non-WF, **migration** is a property of the individuals, as opposed to a propery of the population(s) in a classic WF model.  
-In a **WF** model all individuals survive to maturity and **fitness** is a probability that a sexually mature individuals will contribute to the next generation; fitness is **_relative_** as the population size will be maintained. In **nonWF** fitness influence directly the probability of survival and is a probability that a given individual survive to maturity.  
-There is many more differences that are detailed in slim manual.
+There are fundamental differences between **Wright-Fisher (WF)** and **non-WF** models  
+For instance in a classical **Wright-Fisher** model, generations are **discrete**, **non-overlapping**, individuals reproduce once and died. There is **no age structure**. All these assumptions can be relaxed in a nonWF model, allowing users to simulate more realistic age structures with overlapping generations.  
+In a non-WF model, **migration** is a property of the individuals, as opposed to a propery of the population(s) as in a classic WF model.  
+In a **WF** model all individuals survive to maturity and **fitness** is the probability that a sexually mature individual will contribute to the next generation; fitness is **_relative_** as the population size will be maintained. In **nonWF** models, fitness influences the probability of survival directly and is a probability that a given individual survives to maturity.  
+There are many more differences that are detailed in the slim manual.
+
+
+In these simulations, we modeled three scenarios that incorporate effects of multiple stressors: 
+
+1) **ocean warming** based on the RCP8.5 ("business as usual") scenario (present and projected surface temperature data can be downloaded at https://doi.org/10.5061/dryad.j6q573nfd)
+2) **population bottleneck + ocean warming**
+3) **no connectivity + population bottleneck + ocean warming**
 
 
 ## Dependencies:
