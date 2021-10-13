@@ -50,11 +50,11 @@ Running a model:
  * **_1 choose one of the model in 01-SCRIPTS/xx_scenario_xx.sh_**
 
 example to run all model:  
-    ```
-    slim -d numQTLs=500 ./01-SCRIPTS/01.scenario1_1migration_warming.sh > 02-RESULTS/scenario1.500QTLs.txt  
-    slim -d numQTLs=500 01-SCRIPTS/02.scenario2_1migration_bottleneckNorth_warming.sh >02-RESULTS/scenario2.500QTLs.txt  
-    slim -d numQTLs=500 01-SCRIPTS/03.scenario3_2migration_bottleneckNorth_warming.sh >02-RESULTS/scenario3.500QTLs.txt  
-    ```
+```
+slim -d numQTLs=500 ./01-SCRIPTS/01.scenario1_1migration_warming.sh > 02-RESULTS/scenario1.500QTLs.txt
+slim -d numQTLs=500 01-SCRIPTS/02.scenario2_1migration_bottleneckNorth_warming.sh >02-RESULTS/scenario2.500QTLs.txt  
+slim -d numQTLs=500 01-SCRIPTS/03.scenario3_2migration_bottleneckNorth_warming.sh >02-RESULTS/scenario3.500QTLs.txt  
+```
 
  * **_2 perform a graph of the results with 01-SCRIPTS/04.Figure2_code.R_**   
    
