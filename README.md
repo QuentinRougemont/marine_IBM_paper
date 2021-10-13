@@ -99,7 +99,9 @@ This test model with **global warming + bottleneck + change in connectivity**. A
 
    * **3. Create PNG**   
 
-  Simply run the Rscript ```01-SCRIPTS/04.Figure2_code.R```  to do so.   
+  Download the raster file (```wget https://doi.org/10.5061/dryad.j6q573nfd```)  
+  Then extract the files  
+  And run the Rscript ```01-SCRIPTS/04.Figure2_code.R```  to do so.   
   
   This will produce the kind of images below.   
   
